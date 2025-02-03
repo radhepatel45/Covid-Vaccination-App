@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewSlotActivity"
+    android:fitsSystemWindows="true"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/textViewCurrentcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Current Cases of Covid"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CurrentCaseEditText"
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCurrentcase"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/signin"
+        app:hintTextColor="@color/signin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/CurrentCaseEditText1"
+            style="@style/LoginTextInputInnerFieldStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current cases"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/TextViewVaccineted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Enter How Many People Are Vaccineted"
+        android:layout_below="@id/CurrentCaseEditText"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/VaccinetedEditText"
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewVaccineted"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/signin"
+        app:hintTextColor="@color/signin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/VaccinetedEditText1"
+            style="@style/LoginTextInputInnerFieldStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vaccineted"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textViewRecovered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VaccinetedEditText"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Enter How Many People are recovered:" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RecoveredEditText"
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRecovered"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        app:boxStrokeColor="@color/signin"
+        app:hintTextColor="@color/signin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/RecoveredEditText1"
+            style="@style/LoginTextInputInnerFieldStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/baseline_vaccines_24"
+            android:hint="Recovered"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/signin"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/RecoveredEditText" />
+</RelativeLayout>

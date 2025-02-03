@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "194808648450",
+    "firebase_url": "https://covidapp-4b335-default-rtdb.firebaseio.com",
+    "project_id": "covidapp-4b335",
+    "storage_bucket": "covidapp-4b335.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194808648450:android:1d13dfd5375c3f35c3a81b",
+        "android_client_info": {
+          "package_name": "com.example.covidadminside"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD5P0GPdEPJB1n4Ff06GeR_SpydWwtdIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194808648450:android:ffe1405384bbced3c3a81b",
+        "android_client_info": {
+          "package_name": "com.example.covidappdemo1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD5P0GPdEPJB1n4Ff06GeR_SpydWwtdIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194808648450:android:a863017b9ba8caaec3a81b",
+        "android_client_info": {
+          "package_name": "com.example.vaccine"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD5P0GPdEPJB1n4Ff06GeR_SpydWwtdIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

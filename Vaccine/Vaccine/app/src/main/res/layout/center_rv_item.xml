@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/idTVCenterName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:drawablePadding="4dp"
+                android:padding="4dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:text="Center Name"
+                android:layout_weight="4"
+                android:textColor="#0F4281" />
+
+            <TextView
+                android:id="@+id/idTVFeeType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Fee Type"
+                android:textAlignment="center"
+                android:background="@drawable/feetype_textview_background"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <!--text view for displaying center name-->
+
+        <LinearLayout
+            android:id="@+id/LL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_below="@id/LL1"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/idTVCenterAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16dp"
+                android:text="Center Address"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:textColor="#0F4281" />
+
+            <!--text view for displaying center timings-->
+            <TextView
+                android:id="@+id/idTVCenterTimings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/baseline_access_time_24"
+                android:text="Timings"
+                android:textColor="#0F4281" />
+
+        </LinearLayout>
+
+
+        <!--text view for displaying center address-->
+
+
+
+
+        <LinearLayout
+            android:id="@+id/LL3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL2"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="12dp">
+
+            <!--text view for displaying vaccine name-->
+            <TextView
+                android:id="@+id/idTVVaccineName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_vaccines_24"
+                android:layout_marginStart="10dp"
+                android:padding="4dp"
+                android:textSize="16dp"
+                android:text="Vaccine Name"
+                android:textColor="#0F4281" />
+
+            <!--text view for displaying center fees type-->
+            <TextView
+                android:id="@+id/idTVAgeLimit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Age Limit"
+                android:drawableLeft="@drawable/baseline_person_pin_24"
+                android:layout_marginEnd="10dp"
+                android:textSize="16dp"
+                android:textColor="#0F4281" />
+
+        </LinearLayout>
+
+            <!--text view for displaying center availability-->
+            <TextView
+                android:id="@+id/idTVAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Availability"
+                android:textSize="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="#0F4281"
+                android:layout_below="@id/LL3"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

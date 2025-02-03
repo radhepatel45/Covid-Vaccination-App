@@ -1,0 +1,9 @@
+<!-- res/drawable/rounded_bottom_card.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FBBCCC" />
+    <corners
+        android:bottomLeftRadius="32dp"
+        android:bottomRightRadius="32dp"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="0dp" />
+</shape>

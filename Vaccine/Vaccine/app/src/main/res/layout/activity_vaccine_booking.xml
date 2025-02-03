@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".slotbook.VaccineBookingActivity"
+    android:weightSum="10">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/HeaderCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        app:cardBackgroundColor="@color/your_card_background_color"
+        app:cardElevation="4dp"
+        app:shapeAppearance="@style/ShapeAppearance.CustomCard">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="14dp"
+            android:text="Search your pin code here:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/idEdtPinCode"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="4"
+                android:background="@drawable/search_edittext_background"
+                android:hint="search your pincode here"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColorHint="@android:color/darker_gray" />
+
+            <ImageButton
+                android:id="@+id/idBtnSearch"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="-3dp"
+                android:layout_marginTop="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_button_background"
+                android:src="@drawable/baseline_search_24"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Your Nearby Vaccination Centers:"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_weight="0.5"/>
+
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!--recycler view for displaying results in the form of list-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/centersRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/center_rv_item"
+        android:padding="12dp"
+        android:layout_weight="7.5"/>
+
+</LinearLayout>

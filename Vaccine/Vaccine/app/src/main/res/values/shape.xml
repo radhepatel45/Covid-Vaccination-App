@@ -1,0 +1,12 @@
+<!-- res/values/shape.xml -->
+<resources>
+
+    <style name="ShapeAppearance.CustomCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+
+</resources>

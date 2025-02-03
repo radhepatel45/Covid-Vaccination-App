@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".slotbook.VaccineBookingActivity"
+    android:weightSum="10">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/HeaderCardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        app:cardBackgroundColor="@color/your_card_background_color"
+        app:cardElevation="4dp"
+        app:shapeAppearance="@style/ShapeAppearance.CustomCard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/centerName_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:drawablePadding="4dp"
+                    android:padding="4dp"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="Center Name"
+                    android:textColor="#0F4281" />
+
+            </LinearLayout>
+
+            <!--text view for displaying center name-->
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/LL1"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/centerAddress_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20dp"
+                    android:text="Center Address"
+                    android:drawableLeft="@drawable/baseline_location_on_24"
+                    android:textColor="#0F4281" />
+
+                <!--text view for displaying center timings-->
+                <TextView
+                    android:id="@+id/centerTimings_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="4dp"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/baseline_access_time_24"
+                    android:text="Timings"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#0F4281" />
+
+                <!--text view for displaying vaccine name-->
+                <TextView
+                    android:id="@+id/vaccineName_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/baseline_vaccines_24"
+                    android:layout_marginStart="10dp"
+                    android:padding="4dp"
+                    android:textSize="20dp"
+                    android:text="Vaccine Name"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#0F4281" />
+
+                <!--text view for displaying center fees type-->
+                <TextView
+                    android:id="@+id/ageLimit_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="Age Limit"
+                    android:drawableLeft="@drawable/baseline_person_pin_24"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#0F4281" />
+
+                <TextView
+                    android:id="@+id/feeType_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:text="Fees"
+                    android:drawableLeft="@drawable/baseline_currency_rupee_24"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#0F4281" />
+
+                <!--text view for displaying center availability-->
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bookSlot_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@color/ButtonColor"
+                android:text="Book Slot"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/LL2"
+                 />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

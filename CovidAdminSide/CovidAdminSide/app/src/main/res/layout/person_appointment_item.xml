@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_Hospital_Name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            tools:text="Hospital Name"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginStart="10dp"
+            android:textColor="#0F4281"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:id="@+id/idTVCenterAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:text="Center Address"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:textColor="#0F4281" />
+
+            <TextView
+                android:id="@+id/idTVFeeType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:textSize="16sp"
+                android:text="Fee Type"
+                android:textAlignment="center"
+                android:background="@drawable/feetype_textview_background"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/idTVVaccineName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/baseline_vaccines_24"
+                android:layout_marginStart="10dp"
+                android:padding="4dp"
+                android:textSize="16dp"
+                android:text="Vaccine Name"
+                android:textColor="#0F4281" />
+
+            <TextView
+                android:id="@+id/idTVCenterTimings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:textSize="16dp"
+                android:drawableLeft="@drawable/baseline_access_time_24"
+                android:text="Timings"
+                android:textColor="#0F4281" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:background="@drawable/feetype_textview_background"
+                android:textSize="16dp"
+                android:text="Your Name"
+                android:textColor="#0F4281"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CovidAdminSide</string>
+
+    <string-array name="pincode">
+        <item>382418</item>
+        <item>382415</item>
+    </string-array>
+</resources>
